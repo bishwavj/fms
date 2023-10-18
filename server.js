@@ -15,9 +15,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
 app.use(express.json());
-app.use("/", (req,res)=> {
-  res.send("hello");
-})
+// app.use("/", (req,res)=> {
+//   res.send("hello");
+// })
 app.use("/api", routes);
 
 const PORT = process.env.PORT || 3000;
